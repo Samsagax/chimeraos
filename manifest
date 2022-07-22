@@ -146,11 +146,8 @@ export PACKAGES="\
 	chaotic-aur/libretro-stella2014-git \
 	chaotic-aur/legendary \
 	chaotic-aur/boxtron \
-	chaotic-aur/rtl88x2bu-dkms-git \
-	chaotic-aur/rtw89-dkms-git \
 	chaotic-aur/alvr \
-  gnome-shell \
-  gnome-terminal \
+  gnome \
 "
 
 export AUR_PACKAGES="\
@@ -170,6 +167,8 @@ export AUR_PACKAGES="\
 	r8152-dkms \
 	rtl8812au-dkms-git \
 	rtl8814au-dkms-git \
+	rtl88x2bu-dkms-git \
+	rtw89-dkms-git \
 	xone-dkms \
 	xpad-noone-dkms \
 	xpadneo-dkms \
@@ -178,6 +177,7 @@ export AUR_PACKAGES="\
 	steam-removable-media-git \
 	rz608-fix-git \
 	handygccs-git \
+  plymouth \
 "
 
 export SERVICES="\
