@@ -155,7 +155,7 @@ logind-check-graphical=true
 [Seat:*]
 session-wrapper=/etc/lightdm/Xsession
 autologin-user=${USERNAME}
-autologin-session=steamos
+autologin-session=gamescope-session
 " > /etc/lightdm/lightdm.conf
 
 echo "${SYSTEM_NAME}" > /etc/hostname
@@ -218,13 +218,11 @@ rm -rf \
 /extra_pkgs \
 /extra_certs \
 /home \
-/var \
 
 rm -rf ${FILES_TO_DELETE}
 
 # create necessary directories
 mkdir /home
-mkdir /var
 mkdir /frzr_root
 EOF
 
