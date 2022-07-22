@@ -149,6 +149,8 @@ export PACKAGES="\
 	chaotic-aur/rtl88x2bu-dkms-git \
 	chaotic-aur/rtw89-dkms-git \
 	chaotic-aur/alvr \
+  gnome-shell \
+  gnome-terminal \
 "
 
 export AUR_PACKAGES="\
