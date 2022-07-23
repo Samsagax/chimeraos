@@ -148,6 +148,7 @@ export PACKAGES="\
 	chaotic-aur/boxtron \
 	chaotic-aur/alvr \
   gnome \
+  iio-sensor-proxy \
 "
 
 export AUR_PACKAGES="\
@@ -161,7 +162,7 @@ export AUR_PACKAGES="\
 	libretro-virtualjaguar-git \
 	libretro-opera-git \
 	wyvern \
-	gamescope-git \
+	gamescope-plus-git \
 	gamescope-session-git \
 	srt-live-server \
 	r8152-dkms \
