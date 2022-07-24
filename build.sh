@@ -147,17 +147,6 @@ ${USERNAME} ALL=(ALL) NOPASSWD: /usr/lib/media-support/format-media.sh*
 # set the default editor, so visudo works
 echo "export EDITOR=/usr/bin/vim" >> /etc/bash.bashrc
 
-# set default session in lightdm
-echo "
-[LightDM]
-run-directory=/run/lightdm
-logind-check-graphical=true
-[Seat:*]
-session-wrapper=/etc/lightdm/Xsession
-autologin-user=${USERNAME}
-autologin-session=gamescope-session
-" > /etc/lightdm/lightdm.conf
-
 echo "${SYSTEM_NAME}" > /etc/hostname
 
 # enable multicast dns in avahi
