@@ -260,7 +260,7 @@ if [ -n "${OUTPUT_DIR}" ]; then
 fi
 
 # set outputs for github actions
-echo "version=${VERSION}" >> $GITHUB_OUTPUT
-echo "display_version=${DISPLAY_VERSION}" >> $GITHUB_OUTPUT
-echo "display_name=${SYSTEM_DESC}" >> $GITHUB_OUTPUT
-echo "image_filename=${IMG_FILENAME}" >> $GITHUB_OUTPUT
+echo "version=${VERSION}" >> $env:GITHUB_OUTPUT
+echo "display_version=${DISPLAY_VERSION}" >> $env:GITHUB_OUTPUT
+echo "display_name=${SYSTEM_DESC}" >> $env:GITHUB_OUTPUT
+echo "image_filename=${IMG_FILENAME}" >> $env:GITHUB_OUTPUT
