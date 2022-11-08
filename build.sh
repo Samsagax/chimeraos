@@ -72,7 +72,7 @@ mkdir ${BUILD_PATH}/extra_pkgs
 cp /tmp/temp_repo/* ${BUILD_PATH}/extra_pkgs
 
 # chroot into target
-#mount --bind ${BUILD_PATH} ${BUILD_PATH}
+mount --bind ${BUILD_PATH} ${BUILD_PATH}
 arch-chroot ${BUILD_PATH} /bin/bash <<EOF
 set -e
 set -x
@@ -81,6 +81,9 @@ source /manifest
 
 pacman-key --init
 pacman-key --populate
+
+pacman -S --noconfirm glibc
+ls -lhR /usr/share/locale*
 
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 locale-gen
