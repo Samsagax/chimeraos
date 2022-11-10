@@ -2,7 +2,7 @@ name: System image build
 on:
   push:
     branches:
-    - 'master'
+    - 'test-remove-chaotic'
 jobs:
   build:
     name: System image build
