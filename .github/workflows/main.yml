@@ -100,7 +100,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ steps.build_image.outputs.version }}
-          tag_commitish: $GITHUB_SHA
+          target_commitish: $GITHUB_SHA
           name: ${{ steps.build_image.outputs.display_name }} ${{ steps.build_image.outputs.display_version }} [UNSTABLE]
           draft: false
           prerelease: true
